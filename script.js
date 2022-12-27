@@ -30,5 +30,5 @@ openMobileNav.addEventListener('click',()=>{
 })
 closeMobileNav.addEventListener('click',()=>{
     mobileNavView.classList.add("hide");
-    document.querySelector('body').style.overflowY='hidden'
+    // document.querySelector('body').style.overflowY='hidden'
 })
