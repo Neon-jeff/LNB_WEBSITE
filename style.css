@@ -4,6 +4,9 @@
   padding: 0;
   font-family: "Montserrat", sans-serif;
 }
+body{
+  overflow: visible;
+}
 
 .mobile-nav-view{
   position: fixed;
@@ -38,6 +41,9 @@
 }
 
 .hide{
+  display: none;
+}
+#hide{
   display: none;
 }
 .nav-class{
@@ -169,6 +175,7 @@ h2 span {
 }
 .img-bar img{
     width: 100%;
+    border-radius: 10px;
 }
 
 .menu {
@@ -188,13 +195,19 @@ h2 span {
 
 .img-btn button {
   padding: 10px 30px;
-  border: 3px solid #95a896;
+  border: 2px solid #95a896;
   width: 140px;
   color: #95a896;
   background: none;
   cursor: pointer;
+  border-radius: 3px;
 }
 .img-btn button:hover {
+  border-color: #125c13;
+  color: white;
+  background-color:#125c13;
+}
+#btn-active{
   border-color: #125c13;
   color: white;
   background-color:#125c13;
@@ -213,12 +226,14 @@ h2 span {
   width: 70%;
   padding: 10px 10px;
   transition: width 0.2s ease-in-out;
+  border-radius: 5px;
 }
 .img-card:hover {
   width: 80%;
 }
 .img-card img {
   width: 100%;
+  object-fit: cover;
 }
 .img-card p {
   font-size: 13px;
@@ -227,6 +242,7 @@ h2 span {
 }
 .img-card span {
   font-size: 13px;
+  color: #125c13;
 }
 .choose {
   margin: 50px auto;
@@ -246,12 +262,18 @@ h2 span {
   gap: 20px;
   background-color: #ebf5e6;
   padding: 20px;
+  border-radius: 5px;
 }
 .choices img {
-  width: 40%;
+  width: 32px;
+  object-fit: cover;
+  height: 32px;
 }
 .choices div {
   width: 90%;
+}
+.choices div h3{
+  color: #125c13;
 }
 .gallery {
   background-color: #ebf5e6;
@@ -283,15 +305,23 @@ h2 span {
   display: flex;
   width: 70%;
   gap: 40px;
+  
 }
 .reviews .cards div {
   width: 30%;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  background-color: #ebf5e6;
+  justify-content: center;
+  padding: 0 20px;
+  border-radius: 10px;
 }
 .reviews .cards div img {
   width: 100%;
+  border-radius: 10px;
+  height: 50%;
+  object-fit: cover;
 }
 .contact {
   margin: 25px auto;
@@ -428,6 +458,12 @@ body{
   }
   .reviews .cards{
     width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .reviews .cards div{
+    width: 70%;
+    padding: 20px;
   }
   .contact{
     width: 100vw;
@@ -441,6 +477,7 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
   .cont div span img {
   width: 26px;
   height: 26px;
@@ -449,6 +486,7 @@ body{
 .cont div span{
     font-size: 12px;
 }
+
 footer{
     gap: 10px;
     padding: 30px 0;
