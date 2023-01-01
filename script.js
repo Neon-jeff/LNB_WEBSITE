@@ -76,38 +76,38 @@ menuBtn.forEach((btn) => {
   });
 });
 
-// tl.fromTo("nav", { opacity: 0 }, { opacity: 1, duration: 2, stagger: 0.5 });
-// tl.fromTo(
-//   ".hero-text h2",
-//   { opacity: 0 },
-//   { opacity: 1, duration: 3, stagger: 0.5 },
-//   "-=2"
-// );
-// tl.fromTo(
-//   ".hero-text button",
-//   { x: "-100%", opacity: 0 },
-//   { x: "0", duration: 2, opacity: 1 },
-//   "-=3"
-// );
-// gsap.from(
-//   ".welcome-txt h2",
-//   {
-//     scrollTrigger:{
-//       trigger:'.welcome-txt',
-//       toggleActions:'restart none none none'
-//     },
-//     x:'-100%',
-//     duration:2,
+tl.fromTo("nav", { opacity: 0 }, { opacity: 1, duration: 2, stagger: 0.5 });
+tl.fromTo(
+  ".hero-text h2",
+  { opacity: 0 },
+  { opacity: 1, duration: 3, stagger: 0.5 },
+  "-=2"
+);
+tl.fromTo(
+  ".hero-text button",
+  { x: "-100%", opacity: 0 },
+  { x: "0", duration: 2, opacity: 1 },
+  "-=3"
+);
+gsap.from(
+  ".welcome-txt h2",
+  {
+    scrollTrigger:{
+      trigger:'.welcome-txt',
+      toggleActions:'restart none none none'
+    },
+    x:'-100%',
+    duration:2,
 
-//   },
+  },
 
-// );
-// gsap.from(".welcome-txt p", {
-//   scrollTrigger: {
-//     trigger: ".welcome-txt",
-//     toggleActions: "restart restart restart none",
-//   },
-//   opacity: "0",
-//   duration: 2,
-//   stagger: 0.5,
-// });
+);
+gsap.from(".welcome-txt p", {
+  scrollTrigger: {
+    trigger: ".welcome-txt",
+    toggleActions: "restart restart restart none",
+  },
+  opacity: "0",
+  duration: 2,
+  stagger: 0.5,
+});
