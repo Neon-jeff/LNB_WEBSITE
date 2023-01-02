@@ -154,6 +154,7 @@ h2 span {
   margin: 50px auto;
   justify-content: space-between;
   height: 400px;
+  align-items: center;
 }
 .welcome-txt {
   width: 30%;
@@ -176,6 +177,8 @@ h2 span {
 .img-bar img{
     width: 100%;
     border-radius: 10px;
+    height: 50vh;
+    object-fit: cover;
 }
 
 .menu {
@@ -341,6 +344,16 @@ h2 span {
   height: 32px;
   color: #125c13;
 }
+.cont #map{
+  background-color: #125c13;
+  width: 100%;
+}
+.cont #map img{
+  image-rendering: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 .cont div span {
   padding: 0 20px;
   display: flex;
@@ -402,7 +415,7 @@ body{
     width: 40%;
   }
   .welcome{
-    gap: 20px;
+    gap: 10px;
     flex-direction: column;
     width: 80%;
   }
@@ -414,7 +427,9 @@ body{
   }
   .img-bar{
     width: 100%;
-    height: 50vh;
+   }
+  .img-bar img{
+    height: 30vh;
   }
   .img-bar img{
     width: 100%;
@@ -433,9 +448,18 @@ body{
   }
   .menu .img-container{
     width: 90%;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+  }
+  .img-card p{
+    font-size: 10px;
+  }
+  .img-card span{
+    font-size: 8px;
+    font-weight: 500;
   }
   .choose{
-    width: 90%;
+    width: 95%;
   }
   .choices-cont{
     display: flex;
@@ -462,7 +486,7 @@ body{
     align-items: center;
   }
   .reviews .cards div{
-    width: 70%;
+    width: 80%;
     padding: 20px;
   }
   .contact{
@@ -473,11 +497,10 @@ body{
     width: 100%;
   }
   .contact .cont div{
-    width: 100%;
+    width: 50%;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-
   .cont div span img {
   width: 26px;
   height: 26px;
@@ -486,6 +509,9 @@ body{
 .cont div span{
     font-size: 12px;
 }
+/* .cont #map img{
+  wi: 100%;
+} */
 
 footer{
     gap: 10px;
