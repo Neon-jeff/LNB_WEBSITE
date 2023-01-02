@@ -470,8 +470,9 @@ body{
     font-size: 10px;
   }
   .img-card span{
-    font-size: 8px;
+    font-size: 9.5px;
     font-weight: 500;
+    display: block;
   }
   .choose{
     width: 95%;
