@@ -39,7 +39,13 @@ openMobileNav.addEventListener("click", () => {
   );
 });
 closeMobileNav.addEventListener("click", () => {
-  mobileNavView.classList.add("hide");
+    gsap.fromTo(
+      ".mobile-nav-view",
+      { x: "0", duration: 1, opacity: 1 },
+      { x: "-100%", opacity: 0 }
+    );
+  // mobileNavView.classList.add("hide");
+
 });
 //Button Menu Initial States
 for(i=0;i<menuBtn.length;i++){
