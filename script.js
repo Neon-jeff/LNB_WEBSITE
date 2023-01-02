@@ -18,6 +18,7 @@ window.addEventListener("scroll", () => {
   } else {
     deskNav.classList.remove("nav-class");
   }
+
 });
 function MobileView() {
   if (headerSection.clientWidth <= 481) {
@@ -30,6 +31,12 @@ function MobileView() {
 MobileView();
 openMobileNav.addEventListener("click", () => {
   mobileNavView.classList.remove("hide");
+  gsap.fromTo(
+    ".mobile-nav-view",
+    { x: "-100%", opacity: 0 },
+    { x: "0", duration: 1, opacity: 1 },
+    
+  );
 });
 closeMobileNav.addEventListener("click", () => {
   mobileNavView.classList.add("hide");
@@ -89,19 +96,14 @@ tl.fromTo(
   { x: "0", duration: 2, opacity: 1 },
   "-=3"
 );
-gsap.from(
-  ".welcome-txt h2",
-  {
-    scrollTrigger:{
-      trigger:'.welcome-txt',
-      toggleActions:'restart none none none'
-    },
-    x:'-100%',
-    duration:2,
-
+gsap.from(".welcome-txt h2", {
+  scrollTrigger: {
+    trigger: ".welcome-txt",
+    toggleActions: "restart restart restart none",
   },
-
-);
+  x: "-100%",
+  duration: 2,
+});
 gsap.from(".welcome-txt p", {
   scrollTrigger: {
     trigger: ".welcome-txt",
@@ -111,3 +113,67 @@ gsap.from(".welcome-txt p", {
   duration: 2,
   stagger: 0.5,
 });
+gsap.from(".img-container", {
+  scrollTrigger: {
+    trigger: ".menu ",
+    toggleActions: "restart restart restart restart",
+  },
+  x: "-100%",
+  duration: 1,
+  stagger: 0.5,
+},'-=2');
+gsap.from(
+  ".choose h2",
+  {
+    scrollTrigger: {
+      trigger: ".choose ",
+      toggleActions: "restart restart restart restart",
+    },
+    opacity: "0",
+    duration: 1.5,
+    stagger: 0.5,
+  },
+  "-=2"
+);
+
+gsap.from(
+  ".choose .choices",
+  {
+    scrollTrigger: {
+      trigger: ".choose ",
+      toggleActions: "restart restart restart restart",
+    },
+    opacity: "0",
+    duration: 1.5,
+    stagger: 0.5,
+  },
+  "-=2"
+);
+gsap.from(
+  ".reviews h2",
+  {
+    scrollTrigger: {
+      trigger: ".reviews ",
+      toggleActions: "restart restart restart restart",
+    },
+    opacity: "0",
+    duration: 1.5,
+    stagger: 0.5,
+  },
+  "-=2"
+);
+
+gsap.from(
+  ".reviews .cards div",
+  {
+    scrollTrigger: {
+      trigger: ".reviews ",
+      toggleActions: "restart restart restart restart",
+    },
+    opacity: "0",
+    duration: 1.5,
+    stagger: 0.5,
+  },
+  "-=2"
+);
+

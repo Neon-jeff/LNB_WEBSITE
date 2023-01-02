@@ -19,7 +19,7 @@ body{
   flex-direction: column;
   align-items: center;
   gap: 50px;
-  z-index: 1;
+  z-index: 2;
   padding: 70px 0;
 }
 .mobile-nav-view img{
@@ -37,6 +37,7 @@ body{
   justify-content: space-around;
   padding: 10px 0;
   align-items: center;
+  z-index: 1;
 
 }
 
@@ -53,6 +54,7 @@ body{
   display: flex;
   width: 100%;
   padding-bottom: 20px;
+  z-index: 3;
 }
 body {
   overflow-x: hidden;
@@ -104,6 +106,7 @@ h2 {
 .nav-links p {
   cursor: pointer;
   transition: font-size 0.2s ease-in-out;
+  color: white;
 }
 .nav-links p:hover {
   color: #71f573;
@@ -378,6 +381,7 @@ footer {
   padding: 50px;
   color: white;
   
+  
 }
 footer .logo {
   width: 40%;
@@ -385,6 +389,10 @@ footer .logo {
 }
 footer .logo h2 {
   color: #71f573;
+}
+footer .site-maps p{
+  color: #71f573;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 481px) {
