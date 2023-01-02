@@ -433,6 +433,7 @@ body{
     gap: 10px;
     flex-direction: column;
     width: 80%;
+    margin: 10vw auto;
   }
   .welcome .welcome-txt{
     width: 100%;
