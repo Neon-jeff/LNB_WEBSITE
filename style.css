@@ -82,14 +82,15 @@ h2 {
 .header-contain {
   width: 100vw;
   height: 100vh;
-  background: url(./images/pexels-chan-walrus-958545.jpg), red;
+  background: url(./images/top-view-table-full-delicious-food-composition.jpg), red;
   object-fit: cover;
+  background-position: right;
   background-size: cover;
 }
 .header {
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.781);
+  background-color: rgba(0, 0, 0, 0.8);
   display: flex;
   flex-direction: column;
   gap: 150px;
@@ -149,19 +150,13 @@ h2 span {
   border: 2px solid #125c13;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
 .hero-text button a{
   text-decoration: none;
   color: white;
 }
 
-.hero-text button:hover {
-  background-color: white;
-  color: #125c13;
-  border: 2px solid #125c13;
-  font-weight: 500;
-}
 .welcome {
   display: flex;
   color: black;
