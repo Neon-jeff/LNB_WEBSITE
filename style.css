@@ -453,7 +453,7 @@ body{
     width: 40%;
   }
   .welcome{
-    gap: 10px;
+    gap: 20px;
     flex-direction: column;
     width: 80%;
     margin: 10vw auto;
@@ -466,9 +466,10 @@ body{
   }
   .img-bar{
     width: 100%;
+    align-self: flex-end;
    }
   .img-bar img{
-    height: 30vh;
+    height: 20vh;
   }
   .img-bar img{
     width: 100%;
@@ -541,6 +542,7 @@ body{
     width: 50%;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
   }
   .cont div span img {
   width: 26px;
