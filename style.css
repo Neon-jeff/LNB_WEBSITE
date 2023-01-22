@@ -204,13 +204,13 @@ h2 span {
 }
 .menu .img-btn {
   display: flex;
-  gap: 20px;
+  gap: 3vw;
 }
 
 .img-btn button {
   padding: 10px 30px;
   border: 2px solid #95a896;
-  width: 140px;
+  width: 11vw;
   color: #95a896;
   background: none;
   cursor: pointer;
@@ -263,7 +263,7 @@ h2 span {
   width: 70%;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 2vw;
   align-items: center;
 }
 .choices-cont {
@@ -488,7 +488,8 @@ body{
     margin: 0 auto;
   }
   .menu .img-btn button{
-    width: 70px;
+    /* width: 70px; */
+    width: 20vw;
     font-size: 11px;
     padding: 10px 0;
   }
@@ -512,6 +513,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 5vw;
   }
   .gallery{
     width: 100%;
@@ -532,6 +534,7 @@ body{
     width: 100%;
     flex-direction: column;
     align-items: center;
+    gap: 7vw;
   }
   .reviews .cards div{
     width: 80%;
